@@ -12,6 +12,7 @@ set(SOURCES
     src/game.cpp
     src/game.h
     src/tictactoe.h
+    src/bot.h
 
 
 )

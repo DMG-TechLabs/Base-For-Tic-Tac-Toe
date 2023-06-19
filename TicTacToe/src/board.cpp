@@ -46,6 +46,10 @@ Coords Board::translateSquare(int square) {
     }
 }
 
+int Board::translateSquare(Coords coords){
+    return translateSquare(coords.x, coords.y);
+}
+
 int Board::translateSquare(int x, int y) {
     // Shift x 16 bits and OR it with y
     int combined = (x << 16) | y;

@@ -34,6 +34,7 @@ namespace TicTacToe{
             bool isValidMove(int x, int y);
             bool isValidMove(Coords coords);
             int translateSquare(int x, int y);
+            int translateSquare(Coords coords);
             Coords translateSquare(int square);
     };
 

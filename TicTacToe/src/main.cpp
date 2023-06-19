@@ -1,6 +1,5 @@
 
-#include "board.h"
-#include "game.h"
+#include "tictactoe.h"
 #include <iostream>
 
 using namespace std;

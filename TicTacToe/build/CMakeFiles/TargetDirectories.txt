@@ -1,0 +1,4 @@
+/home/tgeorg/Git_Repos/ThanasisGeorg/Cpp/Tic-Tac-Toe/TicTacToe/build/CMakeFiles/AnsiTextManipulationLibrary.dir
+/home/tgeorg/Git_Repos/ThanasisGeorg/Cpp/Tic-Tac-Toe/TicTacToe/build/CMakeFiles/TicTacToe.dir
+/home/tgeorg/Git_Repos/ThanasisGeorg/Cpp/Tic-Tac-Toe/TicTacToe/build/CMakeFiles/edit_cache.dir
+/home/tgeorg/Git_Repos/ThanasisGeorg/Cpp/Tic-Tac-Toe/TicTacToe/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libAnsiTextManipulationLibrary.a CMakeFiles/AnsiTextManipulationLibrary.dir/Ansi-Text-Manipulation-Library/AnsiTextLibrary/src/text/text.cpp.o CMakeFiles/AnsiTextManipulationLibrary.dir/Ansi-Text-Manipulation-Library/AnsiTextLibrary/src/menu/menu.cpp.o CMakeFiles/AnsiTextManipulationLibrary.dir/Ansi-Text-Manipulation-Library/AnsiTextLibrary/src/menu/menu_utils.cpp.o
+/usr/bin/ranlib libAnsiTextManipulationLibrary.a

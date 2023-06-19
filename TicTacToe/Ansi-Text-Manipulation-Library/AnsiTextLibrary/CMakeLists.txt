@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.16)
 project(AnsiTextManipulationLibrary)
 set(CMAKE_CXX_STANDARD 14)
 
-set(LIB_DIR "../Ansi-Text-Manipulation-Library/AnsiTextLibrary")
+set(LIB_DIR "./Ansi-Text-Manipulation-Library/AnsiTextLibrary")
 
 set(SOURCES
    

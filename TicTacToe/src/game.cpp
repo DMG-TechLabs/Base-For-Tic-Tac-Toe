@@ -39,6 +39,8 @@ char TicTacToe::start(Board board){
         cout << "It's a tie" << endl;
         return Board::TIE;
     }
+
+    return '!';
 }
 
 int TicTacToe::prompt(){

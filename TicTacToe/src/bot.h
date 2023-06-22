@@ -5,6 +5,8 @@
 namespace TicTacToe{
     class Bot {
         public:
-            int generateMove(Board b);
+            virtual ~Bot(){}
+            Bot(){}
+            virtual int generateMove(Board b) = 0;
     };
 } // namespace TicTacToe

@@ -1,8 +1,10 @@
 #include "./game_structure/board.h"
+#include "./menu/menu.h"
 #include "./utils/game_utils.h"
 
 using namespace Utils;
 using namespace Game_Utils;
+using namespace Menu;
 
 void start(Board *board){
     Prompt prompt;
@@ -37,6 +39,8 @@ void start(Board *board){
 
 int main() {
     Board *board = new Board();
+
+    Menu::mainMenu();
 
     start(board);
 

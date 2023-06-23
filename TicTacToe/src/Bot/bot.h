@@ -5,5 +5,9 @@
 using namespace Game_Utils;
 
 class Bot{
-    bool moveTo(int cell_num, vector<string> accepted_moves, Board *board, string turn_of);
+    public:
+        Bot(){};
+        ~Bot(){};
+        
+        bool moveTo(int cell_num, vector<string> accepted_moves, Board *board, string turn_of);
 };

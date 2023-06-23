@@ -1,47 +1,10 @@
 #include "./game_structure/board.h"
 #include "./menu/menu.h"
-#include "./utils/game_utils.h"
 
-using namespace Utils;
-using namespace Game_Utils;
 using namespace Menu;
 
-void start(Board *board){
-    Prompt prompt;
-
-    bool flag = false, result;
-
-    //board->printHelpingBoard();
-
-    board->printBoard();
-
-    do{
-        flag = Utils::prompt("X's turn", prompt.accepted_moves, board, "x");
-        while(!flag){
-            flag = Utils::prompt("X's turn", prompt.accepted_moves, board, "x");
-        }
-
-        result = Game_Utils::checkResult(board);
-        if(result == true){
-            break;
-        }
-
-        flag = Utils::prompt("O's turn", prompt.accepted_moves, board, "o");
-        while(!flag){
-            flag = Utils::prompt("O's turn", prompt.accepted_moves, board, "o");
-        }
-
-        result = Game_Utils::checkResult(board);
-    } while(!result);
-
-}
-
 int main() {
-    Board *board = new Board();
-
     Menu::mainMenu();
-
-    start(board);
 
     return 0;
 }

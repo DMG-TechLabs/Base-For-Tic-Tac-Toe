@@ -140,3 +140,32 @@ bool Game_Utils::turn(string message, Response response, vector<string> accepted
     board->printBoard();
     return false;
 }
+
+void Game_Utils::start(Board *board){
+    Prompt prompt;
+
+    bool flag = false, result;
+
+    //board->printHelpingBoard();
+
+    board->printBoard();
+
+    do{
+        flag = Utils::prompt("X's turn", prompt.accepted_moves, board, "x");
+        while(!flag){
+            flag = Utils::prompt("X's turn", prompt.accepted_moves, board, "x");
+        }
+
+        result = Game_Utils::checkResult(board);
+        if(result == true){
+            break;
+        }
+
+        flag = Utils::prompt("O's turn", prompt.accepted_moves, board, "o");
+        while(!flag){
+            flag = Utils::prompt("O's turn", prompt.accepted_moves, board, "o");
+        }
+
+        result = Game_Utils::checkResult(board);
+    } while(!result);
+}

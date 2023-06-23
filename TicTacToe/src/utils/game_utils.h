@@ -15,4 +15,5 @@ namespace Game_Utils{
     bool checkWin(Board *board, string turn_of);
     bool checkTie(Board *board);
     bool turn(string message, Response response, vector<string> accepted_input, Board *board, string turn_of);
+    void start(Board *board);
 };

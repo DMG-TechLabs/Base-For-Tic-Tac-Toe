@@ -5,6 +5,16 @@
 #include <regex>
 #include "../utils/game_utils.h"
 
+#ifdef _WIN32
+    #include <windows.h>
+    #include <thread>
+    #include <chrono>
+
+    using namespace std;
+#else
+    #include <unistd.h>
+#endif
+
 using namespace AnsiTextLib;
 using namespace Menu;
 using namespace Game_Utils;
@@ -22,6 +32,11 @@ void handleMenuOptions(int selectedItem){
             break;
         case 1:
             Utils::println("Quiting game...");
+            #ifdef _WIN32
+                std::this_thread::sleep_for(chrono::seconds(1));
+            #else
+                sleep(1);
+            #endif
             std::exit(0);
     }
 

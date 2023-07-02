@@ -7,6 +7,6 @@ namespace TicTacToe{
         public:
             virtual ~Bot(){}
             Bot(){}
-            virtual int generateMove(Board b) = 0;
+            virtual int generateMove(char move_for, Board b) = 0;
     };
 } // namespace TicTacToe
